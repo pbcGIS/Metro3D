@@ -22,8 +22,11 @@ A scheme for organizing a 3D city model designed to facilitate collaboration amo
 <p>Next, to extend our project with the City of Cambridge Hostorical Commission to develop a geographically-informed digital archive of building information (photographs and documents) -- to demonstrate how 3D models from the Metro3D Simple City Model Scheme can be integrated into tools and standards used by main-stream archives, libraries and museums.  Follow this work at <a href="http://www.pbcgis.com/metro3d">www.pbcgis.com/metro3d</a>.
 
 <h2>Designed for Extension and Re-Use</h2>
-By publising these resources on GitHub, we hope to be part a city-modeling collaborative in the Boston region and in other places.    
-also hope, to extend our project with the City of Cambridge Hostoprical Commission to develop a geographically-informed digital archive of building information (photographs and documents) -- to demonstrate how 3D models can be integrated into tools and standards used by main-stream archives, libraries and museums.  Follow this work   
+<p>We know that in the Boston area there are several municipal governments, campus administrations and architecture firms that all maintain their own paralell prepresentations of themselves.  Becuase these models are all about context, there is much overlap redundency of detail and effort.  Furthermore the opportunity tosystematically remember the past formothe city is fragmented and impractical to collect.  
+By publising these resources on GitHub, we hope to be part a city-modeling collaborative in the Boston region that demonstrates how sharing models will be cost-effective and synergistic.
+</p>
+<p>We also hope that this activity spawns new applications from the virtual reality, web development and open source communities.  We would love to hear from you. 
+<p>Furthermore, there is no reason why this work should be limited to just the Boston Metro area!  Fork this repository and get your own metro 3D city model started!
      
 <h3>Acknowledgements</h3>
      we have developed with the sponsorship of the Boston Redevelopment Authority 
