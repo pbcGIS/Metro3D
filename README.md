@@ -13,12 +13,7 @@ A scheme for organizing a 3D city model designed to facilitate collaboration amo
   <li>Detailed terrain models: SketchUp, Wavefront Object
    <li>Detailed Building Model Collection: SketchUp, ESRI Grodatabase, Wavefront Object
    <li>Model Catalog with detailed provenance and temporal information (CSV, GeoJSON) 
-   <li>Groundplan images (JPG): 
-      <ul>
-          <li>Modern basemap, 
-          <li>Recent True Ortho Photo, 
-          <li>Detailed historical maps 
-      </ul>
+   <li>Groundplan images (JPG): Modern basemap, Recent True Ortho Photo, Detailed historical maps 
    <li>Vector groundplan and terrain linework in DXF format.
 </ul>
 <h2>Designed for On-Going Management, Exchange and Historical Preservation</h2>
