@@ -21,7 +21,7 @@ A scheme of tiling, coordinate referencing, and cataloging that produces a porta
    * Groundplan images (JPG): Modern basemap, Recent True Ortho Photo, Detailed historical maps 
    * Vector groundplan and terrain linework in DXF format.
 
-The Archive Repository Schema is ready now and will soon replace the [prior version](http://www.bostonplans.org/3d-data-maps/3d-smart-model/3d-data-download) of the Boston Planning and Development Authority's 3D Data Download Site. The repository is:
+The Archive Repository Schema is ready now and will soon replace the [prior version](http://www.bostonplans.org/3d-data-maps/3d-smart-model/3d-data-download target="_new") of the Boston Planning and Development Authority's 3D Data Download Site. The repository is:
    * a simple specification for arranging data with easy-to-maintain html documents and javascript 
    * Easy to access for interactively assembly of any portion of the city-model in commercial 3D modeling tools
    * Easy apply automated tools for assembling and performing wholesale visualiations and workflows using commercial or open-source tool-chains including geographic information systems.
