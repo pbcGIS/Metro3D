@@ -27,7 +27,7 @@ The Archive Repository Schema is ready now and will soon replace the [prior vers
    * Easy apply automated tools for assembling and performing wholesale visualiations and workflows using commercial or open-source tool-chains including geographic information systems.
    * Fulfills the requirements of an [https://en.wikipedia.org/wiki/Open_Archival_Information_System](Open Archive Information System) for assuring integrity of information assets through exchange and migration.;  
 
-Inspect and download a fully-working demo of this simple ready-to use data package from the [Boston3d/bos3d_repository_demo/](tree/main/Boston3d/bos3d_repository_demo) branch of this GitHub repository.
+Inspect and download a fully-working demo of this simple ready-to use data package from the [Boston3d/bos3d_repository_demo/](https://github.com/pbcote/Metro3D/tree/main/Boston3d/bos3d_repository_demo) branch of this GitHub repository.
 
 ## Process: Procedures and Tools for Creating and Managing Simple, Sharable City Models  
 Later this year we wil be publising the ArcGIS Pro and FME toolboxes and tasks that are used to turn municipal GIS data into this repository scheme.
