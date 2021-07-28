@@ -21,13 +21,13 @@ A scheme of tiling, coordinate referencing, and cataloging that produces a porta
    * Groundplan images (JPG): Modern basemap, Recent True Ortho Photo, Detailed historical maps 
    * Vector groundplan and terrain linework in DXF format.
 
-The Archive Repository Schema is ready now and will soon replace the [prior version](http://www.bostonplans.org/3d-data-maps/3d-smart-model/3d-data-download) of the Boston Planning and Development Authority's 3D Data Download Site. The repository is:
+The Archive Repository Schema is ready now and will soon replace the [prior version](http://www.bostonplans.org/3d-data-maps/3d-smart-model/3d-data-download0 of the Boston Planning and Development Authority's 3D Data Download Site. The repository is:
    * a simple specification for arranging data with easy-to-maintain html documents and javascript 
    * Easy to access for interactively assembly of any portion of the city-model in commercial 3D modeling tools
    * Easy apply automated tools for assembling and performing wholesale visualiations and workflows using commercial or open-source tool-chains including geographic information systems.
-   * Fulfills the requirements of an [https://en.wikipedia.org/wiki/Open_Archival_Information_System](Open Archive Information System) for assuring integrity of information assets through exchange and migration.;  
+   * Fulfills the requirements of an [Open Archive Information System](https://en.wikipedia.org/wiki/Open_Archival_Information_System) for assuring integrity of information assets through exchange and migration.  
 
-Inspect and download a fully-working demo of this simple ready-to use data package from the [Boston3d/bos3d_repository_demo/](https://github.com/pbcote/Metro3D/tree/main/Boston3d/bos3d_repository_demo) branch of this GitHub repository.
+Inspect and download a fully-working demo of this simple ready-to use data package from the [./Boston3d/bos3d_repository_demo](Boston3d/bos3d_repository_demo) branch of this GitHub repository.
 
 ## Process: Procedures and Tools for Creating and Managing Simple, Sharable City Models  
 Later this year we wil be publising the ArcGIS Pro and FME toolboxes and tasks that are used to turn municipal GIS data into this repository scheme.
