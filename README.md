@@ -35,9 +35,9 @@ Inspect and download a fully-working demo of this simple ready-to use data packa
 Later this year we will be publising the ArcGIS Pro Toolboxes and Tasks and Safe Software FME workbenches that are used to transform municipal GIS data into city models and then tile and publish using this this repository scheme.  When these are ready, we wil  publishe them in the Boston/ArcGIS folder. 
 
 ## Taking It forward
-<p>There are many ways that this project can be taken forward.  pbcGIS is planning  to extend our project with the City of Cambridge Hostorical Commission [https://chcomeka.azurewebsites.net/omeka-s/s/cdash/page/home](Cambridge Architectural Survey and History) a geographically-informed digital archive of building information.  This application has extended the [popular archiving tool, Omeka to connect old photographs and other documents with historic maps. We wil be adding a 3D previewer to show how easy it is for "traditional" archival tools to preserve 3D models.  
+<p>There are many ways that this project can be taken forward.  pbcGIS is planning  to extend our project with the City of Cambridge Hostorical Commission [https://chcomeka.azurewebsites.net/omeka-s/s/cdash/page/home](Cambridge Architectural Survey and History) a geographically-informed digital archive of building information.  This application has extended the [popular archiving tool, Omeka to connect old photographs and other documents with historic maps. We wil be adding a 3D previewer to show how easy it is for "traditional" archival tools to preserve 3D models.  We also hope to demonstrate the use of the schema to publish historical map tiles that will be useful for people interested in documenting this history of boston places in 3D.  Check [http://www.pbcgis.com/metro3d](www.pbcgis.com/metro3d) for more information about these projects and for contact information. 
 
 Along the way, we hope to develop open-source tool-chains like ThreeJS to process and transform models from the Metro3D Simple Schema to broad-scale web visualizations.  Interested in helping?   
 
 ## Acknowledgements
-     we have developed with the sponsorship of the Boston Redevelopment Authority 
+This work has been supported by the **Boston Planning and Development Agency Office of Digital Cartography and GIS** and the **City of Cambridge GIS Department**. 
