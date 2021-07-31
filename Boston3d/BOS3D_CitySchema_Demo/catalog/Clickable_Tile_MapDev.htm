@@ -79,7 +79,8 @@ var createLabelIcon = function(labelText){
   function makeFileList(feature, layer) {
     //This creates the html string with download links customized according to the tile-id.
     var fileList =
-    "<div class='filelist' style='width: 300px'>" +
+    "<div class='map-popup' style='width: 375px;'>" +
+    //"<div class='filelist' style='width: 300px'>" +
     "<p><b>Tile " + feature.properties.tile_label + " File Downloads... </b>" +
     "&nbsp;&nbsp; Click <img src='./images/infodot.png' height='15px'>" +
     " For file info. </p>" +

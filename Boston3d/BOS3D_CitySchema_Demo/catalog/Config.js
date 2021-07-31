@@ -24,7 +24,8 @@ let coordsys = `
 	<p><b>Projected Coordinate System:</b> State Plane Massachusetts Mainland (Feet),  North American Datum of 1983.
 	<br>
     <b>Vertical Coordinate System for 3D data:</b> North American Vertical Datum, 1988 (NAVD 88) Feet (Height)
-		<P><b>Origin / insertion point:</B> 
+	<P><b>Origin / Offset / Insertion Point </B>
+	<p>The origin of the Metro 3D Boston coordinate system serves as the insertion point for models.
 		 <UL>
 			 <LI>State Plane Coordinates:</b>
 			<ul> <li><b>X:</b>731,100 feet
@@ -35,7 +36,7 @@ let coordsys = `
 			<li><b>Latitude:</b> 42.213379 N 
 			</ul>
 		</ul>
-  <p>For more details about the <b>Metro Boston 3D Coordinate Referencing System</b> see the <a href="./Tile_Grid.htm#coordinates">Boston 3D Tile Grid</a> page.
+  <p>For more details about the <b>Metro Boston 3D Coordinate Referencing System</b> and how to coordinate your projects with city-model resources, see the <a href="./Tile_Grid.htm" target="metadata">Boston 3D Tile Grid</a> page.
 `
 
 let disclaimer = `
