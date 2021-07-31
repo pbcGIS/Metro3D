@@ -1,11 +1,17 @@
 # Metro3D: Simple City Model Schema
 ## Why? Expensive observations and effort are going to waste.
 <p>We know that in the Boston area there are several municipal governments, campus administrations and architecture firms that maintain broad-scale 3D models for their territorial interests and surrounding area.  These models are used primarily for visualizing proposed changes.  Many of these models overlap with each-other resulting in redundency of details and of effort.  Furthermore the opportunity to systematically remember the past form of the city is fragmented and impractical to collect.  
-By publising these resources on GitHub and working with users we seek to answer the question: By sharing tools and data, can we eintice independent city modelers to share selected models -- to build a metropolitan-scale cith model that reflects current conditions and approved proposals while remembering past conditions? 
+By publising these resources on GitHub and working with users we seek to answer the question: By sharing tools and data, can we eintice independent city modelers to share selected models -- to build a metropolitan-scale city model that reflects current conditions and approved proposals while remembering past conditions? 
 
-We do not see region-wide collaborations in the development of metropolitan scale city models because figuring out how to organize the work is very time-consuming.  Individual participants don't have the motivation or skills think through the needs collaborators from different disciplines. This project is designed to diminish these obstacles by working with contributors from the spectrum of dispiplines to create a ready-made framework that is desiggned to preserve information through allof the potential hand-offs that are required. 
+We do not see region-wide collaborations in the development of metropolitan scale city models because figuring out how to organize the work is very time-consuming.  Individual participants don't have the motivation or skills think through the needs collaborators from different disciplines. This project is designed to diminish these obstacles by working with contributors from the spectrum of disciplines to create a ready-made framework that is designed to preserve information through all of the potential hand-offs that are required. 
   
-## What?  A simple scheme for organizing a 3D city model.  
+## What?  A simple scheme for organizing and sharing 3D modular city model components.  
+
+The simple scheme for integrating a multitude of modeling projects begins with the definition of a hierarchy of modules:
+
+* Territories: e.g: Boston, Cambridge, Brookline, Harvard
+* Tiled modules: Terrain meshes, Ground plan images
+* 3D Structure Models: Buildings, Bridges and Walls 
 
 Provides a framework for collaboration and sharing among diverse disciplines and their tools.
 
