@@ -7,15 +7,10 @@
   <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
-    <!-- Load Leaflet from CDN -->
     <link rel="stylesheet" href="./css_js/leaflet/leaflet.css">
     <script src="./css_js/leaflet/leaflet.js"></script>
-
-
-    <!-- Load Esri Leaflet from CDN -->
-    <script src="https://unpkg.com/esri-leaflet@2.1.4/dist/esri-leaflet.js"
-    integrity="sha512-m+BZ3OSlzGdYLqUBZt3u6eA0sH+Txdmq7cqA1u8/B2aTXviGMMLOfrKyiIW7181jbzZAY0u+3jWoiL61iLcTKQ=="
-    crossorigin=""></script>
+    <script src="./css_js/leaflet/Leaflet.ImageOverlay.Rotated.js"></script>
+    <script src="./css_js/leaflet/esri-leaflet.js"></script>
 
 
   <style>
@@ -70,11 +65,16 @@ var createLabelIcon = function(labelText){
 
   var tileLabels =  L.geoJson(Bos3dTilesGeoJson, {
     style: gridStyle,
+
     onEachFeature: function (feature, layer) {
+      layer.bindPopup(makeFileList(feature, layer));
       L.marker(new L.LatLng(feature.properties.Lat,feature.properties.Lon), {
         icon:createLabelIcon(feature.properties.tile_label),
-        }).addTo(mymap).bindPopup(makeFileList(feature, layer)
-        )}}).addTo(mymap);
+        }).addTo(mymap).bindPopup(makeFileList(feature, layer))
+        }});
+        
+    tileLabels.addTo(mymap);
+ 
 
   function makeFileList(feature, layer) {
     //This creates the html string with download links customized according to the tile-id.
@@ -136,15 +136,51 @@ var createLabelIcon = function(labelText){
     });
   }
 
-  L.esri.tiledMapLayer({
-    url: "http://gis.cityofboston.gov/arcgis/rest/services/Basemaps/BostonCityBasemap_WM/MapServer",
+let esriUrl = "https://gis.cityofboston.gov/arcgis/rest/services/Basemaps/BostonCityBasemap_WM/MapServer"
+
+// This function is called after checking that the URL has no error
+function drawEsriLayer() { 
+  var esrilayer = L.esri.tiledMapLayer({
+    url: esriUrl,
     zoomSnap: 0.5,
     maxZoom: 15.5,
     minZoom: 11,
     attribution: 'Created by <a href="http://pbcGIS.com">pbcGIS.com</a>',
   }).addTo(mymap);
+}
+ 
+// Draws the map background from local image in case the esrilayer is not working
+function drawImageLayer() {
+    console.log("Drawing fallback layer");
+  var topleft  = L.latLng(42.419174946992001,-71.22248992387685),
+	topright   = L.latLng(42.417888953401032, -70.889189881593182),
+	bottomleft = L.latLng(42.213370172338777, -71.223390668176748);
+   var overlay = L.imageOverlay.rotated("./images/Bos3d_TileMapFallback.jpg", topleft, topright, bottomleft, {
+	attribution: "MassGIS, pbcGIS"
+}).addTo(mymap);
 
-  // L.esri.basemapLayer("Topographic").addTo(mymap);
+}
+
+// Here we check to see if the esri layer exists.  If not, we draw the fallback. 
+const Http = new XMLHttpRequest();
+Http.open("GET", esriUrl);
+XMLHttpRequest.onerror = function (){
+  console.log("Error accessing web service at " + esriURL + " using local image for map.")
+  drawImageLayer();
+}
+Http.send();
+Http.onreadystatechange = (e) => {
+  if (Http.status == 0) {
+     console.log('status is: ' + Http.status + 'Drawing Image layer');
+     drawImageLayer();
+    }else {
+  if (Http.readyState == 4) {
+    console.log('readyState is: ' + Http.readyState + 'Drawing ESRI layer');
+    drawEsriLayer();
+  } 
+}};
+
+
 </script>
 
 </body>

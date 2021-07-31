@@ -57,7 +57,7 @@ The real-world structures represented by models in the collection may exist or m
 -->
 <h2 id="interop"> A Platform for Multidisciplinary Research and Collaboration</h2>
 <p>
-    A 3D city model is a useful framework for many types of research.  Within the BPDA, applications are focused on urban planning and design review.  In the design and development community, city models are used to understand the present and future context of development alternatives.  People interested in understanding the history of places can use the model collection as a framework for documenting and preserving information about structures that no longer exist or proposals that were never built.  Archivists and librarians will be interested in preserving 3D models of buildings as they currently preserve collections of antique photographs, drawings and ephemera.   From a historian's perspective, 3D models represent historical observations.  The 3D city model, like an old map, can be used to place independent documents in context to discover new information about the history of places.
+    A 3D city model is useful for many types of research.  Within the BPDA applications are focused on urban planning and design review.  In the design and development community, city models are used to understand development alternatives.  People interested in the history of places can use the model as a resource and repository for obtaining and sharing observations of structures -- including ones that no longer exist or proposals that were never built.  Archivists and librarians will be interested in preserving 3D models of buildings just as they currently preserve collections of antique photographs, drawings and maps.    The 3D city model, like an old map, can be used to place independent documents in context to discover new information about the relationships among independent documents.
 </p>
 
 <figure class="fig_middle">
@@ -243,9 +243,17 @@ The SketchUp format models preserve the unique Model_ID as the group name for ea
     <td>Latitude of the model centroid (2D) in decimal degrees.  Centroid is calculated by ArcGIS using the “Inside” option.</td>
     </tr>
     <tr>
-    <td><b>Centr_Lon</b>Double<br></td>
+    <td><b>Centr_X</b>Double<br></td>
     <td>Longitude of the model  Centroid (2D) in decimal degrees.</td>
     </tr>
+    <tr>
+        <td width="20%"><b>Centr_X</b>Double<br></td>
+        <td>X coordinate (Feet) of the model centroid in the Metro Boston 3D coordinate system. This attribute is provided in the CSV and JSON versions of the model catalog for the purposes of coordinate transformation. Centroid is calculated by ArcGIS using the “Inside” option with the multipatch footprint.</td>
+        </tr>
+        <tr>
+        <td><b>Centr_Y</b>Double<br></td>
+        <td>Y coordinate (Feet).  See above.  </td>
+        </tr>
     <tr>
     <td><b>Min_El_Ft</b><br>Double</td>
     <td>The lowest elevation of the  model.  This may be below ground. </td>
